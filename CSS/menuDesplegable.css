@@ -1,0 +1,147 @@
+/*Barra con gradiente que se desplaza a drecha*/
+.barraMenuDeportes{
+
+
+/*gradiente de la barra de menues*/
+background: linear-gradient(to right, rgba(235,235,235,1) 0%, rgba(214,214,214,1) 51%, rgba(255,255,255,1) 100%);
+
+transition: width 1s;
+}
+/*Al pasarle el mouse por encima, la barra se despliega hasta el final*/
+.barraMenuDeportes:hover{
+width: 100%;
+}
+
+
+/*Menu desplegable con items y sub items*/
+
+/* Reset */
+.barraMenuDeportes
+.barraMenuDeportes ul,
+.barraMenuDeportes li,
+.barraMenuDeportes a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+/* Menu */
+.barraMenuDeportes {	
+	height: 50px;
+	width: 505px;
+
+	background: #4c4e5a;
+	background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.barraMenuDeportes li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+}
+
+/* Links */
+
+.barraMenuDeportes li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	
+	
+	line-height: 28px;
+	text-decoration: none;
+	
+	border-left: 1px solid #393942;
+	border-right: 1px solid #4f5058;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px; /****/
+
+	color: #f3f3f3;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+.barraMenuDeportes li:first-child a { border-left: none; }
+.barraMenuDeportes li:last-child a{ border-right: none; }
+
+.barraMenuDeportes li:hover > a { color: #8fde62; }
+
+/* Sub Menu */
+
+.barraMenuDeportes ul {
+	position: absolute;
+	top: 50px;
+	left:-16px; /*margen del submenu*/
+
+	opacity: 0;
+	
+	background: #1f2024;
+
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
+}
+
+.barraMenuDeportes li:hover > ul { opacity: 1; }
+
+.barraMenuDeportes ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+.barraMenuDeportes li:hover > ul li {
+	height: 36px;/****/
+	overflow: visible;
+	padding: 0;
+
+}
+
+.barraMenuDeportes ul li a {
+	width: 120px; /****/
+	
+	padding: 4px 40px 4px 15px;
+	margin: 0;
+
+	border: none;
+	border-bottom: 1px solid #353539;	
+}
+
+.barraMenuDeportes ul li:last-child a { border: none; }
+
+/*Insertar Iconos
+.barraMenuDeportes a.Alpinismo { background: url(../Imagen/alpinismo.png) no-repeat 6px center; }
+.barraMenuDeportes a.Esqui { background: url(../Imagen/esqui.png) no-repeat 6px center; }
+.barraMenuDeportes a.Snowboard { background: url(../Imagen/snowboard.png) no-repeat 6px center; }
+.barraMenuDeportes a.Treking { background: url(../Imagen/trekking.png) no-repeat 6px center; }
+*/

@@ -1,0 +1,123 @@
+
+header,footer{
+	/*Un diseño flexible debe tener un elemento principal con la propiedad de visualización establecida en flex .
+	Los elementos secundarios directos del contenedor flexible se convierten automáticamente en elementos flexibles.*/
+  display: flex;
+  /*La propiedad flex-wrap  especifica si los elementos flexibles deben ajustarse o no.*/
+  flex-wrap: wrap;
+  /*La propiedad justify-content se usa para alinear los elementos flexibles:*/
+  /*El valor de espacio between muestra los elementos flexibles con espacio entre las líneas*/
+  justify-content: space-between;
+}
+body{
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  background-size: contain;	
+}
+.contenedor{
+	/*Propiedades del box html*/
+	width:99%;
+	height: 9.2%;
+	border-radius: 10px;
+	margin: 5px;
+	background-color: white;
+	border: 2px solid #F2F2F2;
+	display: inline-block;
+	opacity: 0.99;
+
+	/*propiedades del texto*/
+	font-family : arial;
+	font-weight : bolder;
+
+}
+.titulo{
+	
+	width:470px;
+	height:20px;
+	padding: 15px;
+
+	font-size : 15pt;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/*hacer que el texto se acomode (para ajustarse a diversas formas en CSS3) dentro del boton*/
+	overflow: hidden;
+
+}
+.imgAr{
+	
+	background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 300%;
+    background-size: 100% auto;
+
+}
+/*Formato de texto de hipervinculos*/
+.hipervinculo{	
+
+/*alineacion del texto dentro del boton*/
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	/*hacer que el texto se acomode (para ajustarse a diversas formas en CSS3) dentro del boton*/
+	overflow: hidden;
+	
+	color: #B8B5B5;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #464646;
+
+	float:right;
+	width:85px;
+	margin:7px;
+
+	
+	background:none;
+	text-align:center;
+	border:2px solid #C5C9BA;
+	padding:9px 15px;
+	outline:none;	
+	border-radius: 24px;
+	transition : 0.70s;
+
+	font-size : 11pt;
+
+}
+/*Darle bordes redondos a la imagen*/
+.imgCarrito{
+	
+	background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 90%; 
+	
+}
+/*regla para que cambie de color al colocar el cursos encima*/
+.hipervinculo:hover{
+	
+	background: #1E90ff;
+	color: white;
+
+}
+/*Quitar el subrrayado de los hipervinculos*/
+.hipervinculo:link
+{
+	
+	text-decoration:none;
+
+}
+
+select{
+	
+    background: none;
+    border: none;
+	width:100px;
+	height:30;
+	color:#A89E96;
+	
+	size:"3";
+	
+	font-size: 14px;
+}
+

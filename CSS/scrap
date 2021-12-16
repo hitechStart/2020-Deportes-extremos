@@ -1,0 +1,18 @@
+<video style="position:absolute; top:1500" width="320" height="240" controls>
+		<source src="Video/Sabaton.mp4" type="video/mp4"> 
+		Your browser does not support the video tag.
+		</video>
+		
+		
+		<!--con la etiqueta cite se suele indicar el autor-->
+		<cite style="position:absolute; top:1500">Maximiliano Di Ludovico</cite>
+		
+		<br/>
+		<!--con la etiqueta hr podemos colocar una linea separadora-->
+		<hr style="position:absolute; top:1500" >
+		
+		<a style="position:absolute; top:1500"href="#Subir">Ir al principio</a>
+		<!--con a href creamos un hiper vinculo; tambien definimos una ruta absoluta porque es un link externo o global. 
+		la etiqueta target="_blank" es para que abra el hyper vinculo en otra pestaña nueva-->
+		<a style="position:absolute; top:2000"target="_blank" href="https://www.google.com.ar/?gws_rd=ssl">Ir a Google </a>
+		<a style="position:absolute; top:1500" href="mailto:mdlprofesional@yahoo.com.ar?">Escribenos</a>

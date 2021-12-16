@@ -1,0 +1,9 @@
+/*El sombolo de radio actividad girara en ambos sentidos dependiendo de la asignacion del sentido que le de el mouse (izquierda o dereha)*/
+.simbolo{
+
+transition: transform 2s;	
+}
+.simbolo:hover{
+transform: rotate(1080deg);
+}
+

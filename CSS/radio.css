@@ -1,0 +1,24 @@
+.radio{
+width:220; 
+height:200;	
+
+border-radius: 10px 40px 80px 80px;
+}
+.descripcionRadio{
+font-size : 9pt;
+font-family : verdana;
+color:#FDFFF8;
+}
+#boton{
+/*	display:block;
+	margin:0 auto; 
+	margin-top:calc(24vh - 0em); 
+	margin-left:1000px; 
+	
+*/	
+	
+	position:absolute;
+        left:1220px;
+        top:245px;
+	
+	}

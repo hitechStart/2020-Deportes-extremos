@@ -1,0 +1,512 @@
+<!--!DOCTYPE html: La declaración no es una etiqueta HTML. Es una "información" para el navegador sobre qué tipo de documento esperar.-->
+
+<!--elemento es el elemento raíz de una página HTML.-->
+<html lang="es-AR">
+<!--elemento contiene metainformación sobre la página HTML.-->
+<!--**********************************************Head******************************************************------------------>
+	<head>
+
+
+	<!--Los meta datos son informacion que le damos al navegador para que 
+	identifique nuestra pagina web solicitada por un usuario. -->
+	
+	<meta charset="utf-8">
+	
+	<!--Responsive//El viewport es el área visible del usuario de una página web.
+	Se usa para adaptar la pagina al tamaño de la pantalla del usuario que la solicito
+	Configuración de la ventana gráfica
+	HTML5 introdujo un método para permitir a los diseñadores web tomar el control de la ventana gráfica 
+	a través de la <meta>etiqueta.
+	La width=device-widthparte establece el ancho de la página para seguir el ancho de la pantalla del dispositivo
+	La initial-scale=1.0parte establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.-->
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="content-type" content="text/html" />
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<meta name="keywords" content="gustos, placer, actividades, ocio, bienestar, deportes extremos" />
+	<meta name="author" content="Di Ludovico Maximiliano">
+	<!--Al mostrarse en la pagina de google, esta es la descripcion que podra leer el usuario sobre la pagina-->
+	<meta name="description" content="Bienvenido a High Speed donde podras explorar
+	nuevos deportes, actividades, gustos y placeres para agregar a tu vida y disfrutar de los deportes extremos">
+	<meta name="actualizado" content="1/08/2020" />
+	
+<!------------------------------------------------------------------------------------------------------------------------------------>	
+	<!--elemento especifica un título para la página HTML (que se muestra en la barra de título del navegador o en la pestaña de la página)-->
+
+	<title title="Deportes extremos">Deportes extremos</title>
+	
+	<!--Icono de nuestra pagina web, asocia tu web a un elemento gráfico como una imagen corporativa, logotipo
+	
+	El destino del enlace se especifica en el atributo href, el cual envía en la URL de una solicitud GET:.
+	Tambien puede ser un enlace de llamda href="tel:+4733378901"	-->
+	
+	<!--Atributos para href:
+	href="/images/myw3schoolsimage.jpg" download
+	
+	El atributo hreflang especifica el idioma del documento en el enlace:
+	 href="https://www.w3schools.com" hreflang="en">W3Schools
+	Un enlace con un atributo de medios:
+		
+		Open media attribute page for print:
+		 href="att_a_media.asp?output=print" media="print and (resolution:300dpi)"
+		
+		Especifica la relación entre el documento actual y el documento vinculado:
+		<a rel="nofollow" href="http://www.functravel.com/">Cheap Flights</a>
+		
+		rel	alternate
+			author
+			bookmark
+			external
+			help
+			license
+			next
+			nofollow
+			noreferrer
+			noopener
+			prev
+			search
+			tag
+		-->
+		
+	<link rel="shortcut icon" type="image/x-icon" href="Imagen/icono.ico">
+		
+<!------------------------------------------------------------------------------------------------------------------------------------>	
+
+	<!--Archivo CSS href dirige al usuario hacia un lugar o elemento local -->
+	
+	
+	<link rel="stylesheet" type="text/css" href="CSS/encabezado.CSS">
+	<link rel="stylesheet" type="text/css" href="CSS/servicios.css">
+	<link rel="stylesheet" type="text/css" href="CSS/radio.css">
+	<link rel="stylesheet" type="text/css" href="CSS/slider.css"/>
+	<link rel="stylesheet" type="text/css" href="CSS/vinieta.css">
+	<link rel="stylesheet" type="text/css" href="CSS/vinieta.css">
+	<link rel="stylesheet" type="text/css" href="CSS/principal.css">
+	<link rel="stylesheet" type="text/css" href="CSS/simbolo.css">
+	<link rel="stylesheet" type="text/css" href="CSS/menuDesplegable.css">
+	<link rel="stylesheet" type="text/css" href="CSS/grilla.css">
+	<link rel="stylesheet" type="text/css" href="CSS/pieDePagina.css">
+	
+    <script type="text/javascript" src="js/slider.js"> </script>
+	
+<!--elemento define el cuerpo del documento y es un contenedor para todos los contenidos visibles, como encabezados, párrafos, imágenes, 
+	hipervínculos, tablas, listas, etc.
+	El tamaño de fuente predeterminado suele ser de 16 píxeles.-->
+<body  background="Imagen/fondo html.jpg">
+	
+<!--------------------------------Encabezado------------------------------------------------------------------------------------>	
+<header>
+	<div class="contenedor" >
+	
+			<!--El atributo style se usa para agregar estilos a un elemento, como color, fuente, tamaño y más.-->
+			
+			<div class="titulo" style="float:left;color:#A89E96;"> Bienvenidos a Deportes extremos Argentina
+			<img class="imgAr" src="Imagen/imgAr.jpg" alt="Bandera Argentina" align="right" width="30" height="30"></div>
+			
+			<div class="inicio" style="color:#A89E96;">
+			<a class="hipervinculo" target="_blank" href="https://www.google.com.ar/?gws_rd=ssl" color="silver">INICIO</a></div>
+			
+			<div class="registrar" style="color:#A89E96;">
+			<a class="hipervinculo" target="_blank" href="https://www.google.com.ar/?gws_rd=ssl">REGISTRAR</a></div>	
+			
+			<div class="carrito" style="color:#A89E96;">
+			<a class="hipervinculo" title="Agrega tus productos al carrito">
+			
+			<img class="imgCarrito" src="Imagen/Carrito.jpg" alt="Carrito" align="left" width="18" height="18">CARRITO</a></div>
+	
+			<select class="Lenguaje" style="float:right;margin:10px"  onchange="showValue(this.value)">
+			
+				<option value="Español" selected="selected">Español</option>
+				<option value="Ingles">Ingles</option>
+				<option value="Portugues">Portugues</option>
+				
+			</select>
+	</div>
+</header>
+<!----------------------------Separador--------------------------------------------------------------------------------------------->	
+	<hr style="width:100%; background-color:white;" size="3px">
+	
+<!-----------------------------Barra de menues y radio Hell--------------------------------------------------------------------------->	
+<main>		
+					<img class="radio" src="Imagen/radio/radio.gif" alt="Radio" align="right">
+				<!--img class="radio" src="Imagen/radio/radio.gif" alt="Radio transmitiendo" align="right"-->
+				
+				
+				<!-- btn-secondary float-right-->
+				<button id="boton">&#9655;</button>
+				
+				<script src="JS/radio.js"></script>
+			
+<!------------------menu principal-------------------------------->
+<ul class="servicios" style="position:absolute; left:350px">
+	
+			<li><a>Quienes somos</a>
+			 <ul> 
+            <li><a href="" title="Rapel">Rapel</a></li>
+            <li><a  href="" title="Alpinismo">Alpinismo</a></li>
+            <li><a  href="" title="Trekking">Trekking</a></li>
+			 <li><a href="" title="Snowboard">Snowboard</a></li>
+			</ul>
+			</li>
+			
+			<li><a>Cursos</a>
+			 <ul> 
+            <li><a href="" title="Paracaidismo">Paracaidismo</a></li>
+			 <li><a href="" title="Highline">Highline</a></li>
+			  <li><a href="" title="Wingsuit">Wingsuit</a></li>
+            <li><a  href="" title="Acrobacia Aerea">Acrobacia</a></li>
+			</ul>
+			</li>
+	
+			<li><a>Tutoriales</a>
+			<ul> 
+            <li><a href="" title="Rafting">Rafting</a></li>
+            <li><a  href="" title="Kayak">Kayak</a></li>
+			<li><a href="" title="Surf">Surf</a></li>
+			<li><a href="" title="Esqui nautico">Esqui</a></li>
+			</ul>
+			</li>
+			
+			<li><a>Contacto</a>
+			<ul> 
+            <li><a href="" title="Drafting">drafting</a></li>
+            <li><a  href="" title="Drifting">Drigting</a></li>
+			<li><a href="" title="Longboarding">Longboarding</a></li>
+			</ul>
+			</li>	
+	</ul>
+			
+			
+<!------------------------------------------------------------------------------------------------------------------------------------>	
+<hr style="width:100%; background-color:white;" size="3px">
+
+	</head>
+<!---------------------------------------------------Main----------------------------------------------------------------------------->	
+
+<!--Carrusel-->
+
+<div id="ninja-slider">
+        <div class="slider-inner">
+            <ul>
+                <li>
+                    <a class="ns-img" href="Imagen/carrusell/paracaidismo.jpg"></a>
+                    <div class="caption">Libera tu mente</div>
+                </li>
+                <li>
+                    <a class="ns-img" href="Imagen/carrusell/ciclismo.jpg"></a>
+                    <div class="caption">Busca la emocion</div>
+                </li>
+                <li>
+                    <a class="ns-img" href="Imagen/carrusell/montanismo.jpg"></a>
+                    <div class="caption">Vence el limite</div>
+                </li>
+                <li>
+                    <a class="ns-img" href="Imagen/carrusell/rollerDerby.jpg"></a>
+                    <div class="caption">Acepta el desafio</div>
+                </li>
+                <li>
+                    <a class="ns-img" href="Imagen/carrusell/parkour.jpg"></a>
+                    <div class="caption">Vive hoy</div>
+                </li>
+            </ul>
+            <div class="navsWrapper">
+                <div id="ninja-slider-prev"></div>
+                <div id="ninja-slider-next"></div>
+            </div>
+        </div>
+    </div>
+
+<!-------------------------------------Primera Columna-------------------------------------------------------------------------------->			
+	<table cellspacing="15" align="center">
+
+		<tr >
+		
+		<!--con la etiqueta img agregamos una imagen.Los atributos width y height son para definir el tamaño. 
+		El atributo alt (alternative) es para agregar una leyenda opcional en caso de que nuesto navegador no encuentre la imagen. 
+		con title al pasarle el mouse por la imagen nos muestra la descripcion especificada.
+		si la imagen está guardada en otro dominio usa scr="http://www.domain.com/image.jpg".		-->
+		<td>
+		
+			<!-- Con el atributo i se pone el texto en cursiva y con la b se pone el texto en negrita-->
+			<h3 class="leyenda" align="center" >Corre Rapido y Furioso</h3>		
+			<audio id="audioTestElem" title="click para oirlo rugiendo" src="Sonido/Rugido.mp3" autobuffer ></audio>
+			<div onclick="audioTestElem.play()">
+				<a title="Clik en la imagen para hacerlo rugir">
+				<img class="chita" src="Imagen/Chita.jpg" 
+				alt="Chita salvaje"
+				
+				></a>
+			</div>
+			<!--con la etiqueta blockquote indicamos notas-->
+			<h4 class="descripcion_imagen" align="rigth"><b>No le des la espalda a tu impulso salvaje</b></h4>
+			<br>
+			<div id="lista1">
+			
+				<!--lista desordenadastyle="list-style-image:url(https://cdn.pixabay.com/photo/2012/04/10/22/57/heart-26790__340.png);" square; -->
+				<ul style = "color:#FDFFF8;">
+					<li><span class="caracteristicas" style = "font-size:22px;">
+					<a class="refVinieta" href="https://www.ejemplos.co/20-ejemplos-de-ejercicios-de-agilidad/">Agilidad</a></span></li>
+					<li><span class="caracteristicas" style = "font-size:22px;">
+					<a class="refVinieta" href="https://es-la.facebook.com/VersaDep/">Versatilidad</a></span></li>
+					<li><span class="caracteristicas" style = "font-size:22px;">
+					<a class="refVinieta" href="http://diposit.ub.edu/dspace/bitstream/2445/108477/1/629241.pdf">Observacion</a></span></li>
+					</ul>
+			</div>
+		</td>
+		
+<!----------------------------------------------------------------------------------------->
+		<td class="verticalLine"></td>
+<!-------------------------------Segunda Columna-------------------------------------------->
+
+		<td class="leyenda" align="center" >Vive tu estilo como quieras<a name="Subir"></a>
+			
+			<!--p se ha utilizado para parrafo, b o strong para poner en negrita un texto y i para cursiva-->
+			<p class="texto" align="justify"><font size="4" color="white" face="Bookman Old Style, Book Antiqua, Garamond"> 
+				<span style="color: #FBDED6;"><strong><i>Enciende tus pensamientos y lleva tus pies hacia la nube!</strong><i></span> podras armar sue&ntilde;os, deseos y realizar
+				todo aquello que has pedido a las olas, vuela a maxima velocidad de forma libre y subete al relampago con fuerza hacia el sol.
+				No olvides quemar las ruedas del conocimiento y la diversion. Empieza hoy tu nuevo estilo de vida, cabalga rapido y furioso hacia la 
+				felicidad, que las arenas del tiempo no te alcancen!
+				</font>
+			</p>
+			<div class="simbolo" align="center"><img src="Imagen/simbolo.png" 
+				alt="Alto Voltaje"
+				width="120"; 
+				height="100";	>
+			</div>
+		</td>
+		
+<!----------------------------------------------------------------------------------------->
+		<td class="verticalLine"></td>
+<!----------------------------Tercera Columna---------------------------------------------->
+
+		<td class="leyenda" align="center"> Respònde al llamado de la emocion
+		<img class="imagenParacaidismo" alt="Paracaidismo" src="Imagen/aire.jpg">
+		</td>
+		</tr>
+	</table>
+<!----------------------------------------------------------------------------------------->
+
+		<!--con la etiqueta hr podemos colocar una linea separadora-->
+		<hr style="width:100%; background-color:white;" size="3px">
+		
+<!--------------------------------Menu  de Deportes------------------------------------------->		
+		
+	<ul class="barraMenuDeportes">
+	
+			<li><a>Montaña</a>
+			 <ul> 
+            <li><a href="http://www.argentinaturismo.com.ar/turismo/rappel.php" title="Rapel">Rapel</a></li>
+            <li><a  href="https://eaam.com.ar/" title="Alpinismo">Alpinismo</a></li>
+            <li><a  href="https://www.senderismo.net/trekking/argentina" title="Trekking">Trekking</a></li>
+			 <li><a href="https://www.aadidess.com/" title="Snowboard">Snowboard</a></li>
+			</ul>
+			</li>
+			
+			<li><a>Cielo</a>
+			 <ul> 
+            <li><a href="http://www.paracaidismo.org.ar/" title="Paracaidismo">Paracaidismo</a></li>
+			 <li><a href="https://www.facebook.com/festivalargentinodehighline/" title="Highline">Highline</a></li>
+			  <li><a href="https://es-la.facebook.com/WingsuitArgentina" title="Wingsuit">Wingsuit</a></li>
+            <li><a  href="https://www.proflight.com.ar/?gclid=EAIaIQobChMI7q2HlviE6wIVxoCRCh0CwQToEAAYASAAEgI8T_D_BwE" title="Acrobacia Aerea">Acrobacia</a></li>
+			</ul>
+			</li>
+	
+			<li><a>Agua</a>
+			<ul> 
+            <li><a href="https://www.laninturismo.com/es/curso-de-guia-de-rafting.html" title="Rafting">Rafting</a></li>
+            <li><a  href="http://www.paddlingpatagonia.com/es/cursos.php" title="Kayak">Kayak</a></li>
+			<li><a href="http://www.asasurf.org.ar/index.php/cursos-isa" title="Surf">Surf</a></li>
+			<li><a href="http://www.fadew.com.ar/" title="Esqui nautico">Esqui</a></li>
+			</ul>
+			</li>
+			
+			<li><a>Tierra</a>
+			<ul> 
+            <li><a href="https://ipef.com/donde-estamos?gclid=EAIaIQobChMIneCv5fmE6wIVjwyRCh1iUA7bEAAYAiAAEgJsq_D_BwE#page-content" title="Drafting">drafting</a></li>
+            <li><a  href="http://ptcescuela.com/nuestros-cursos/cursos-para-particulares/curso-de-drifting/" title="Drifting">Drigting</a></li>
+			<li><a href="https://cbax.cba.gov.ar/escuelas-deportivas/" title="Longboarding">Longboarding</a></li>
+			</ul>
+			</li>
+			
+			<li><a>Deporte urbano</a>	
+			<ul> 
+			<li><a href="https://www.parkourintegral.com/" title="Parkour">parkour</a></li> 
+            <li><a href="https://www.facebook.com/pages/category/School/Escuela-Integral-de-Parkour-Buenos-Aires-1579156352315583/" title="Freerunning">freerunning</a></li>
+            <li><a  href="https://gualdatraining.com/instructorado-running/?gclid=EAIaIQobChMI6Lf_t_qE6wIVi4eRCh1ZoAkTEAAYASAAEgKZTPD_BwE" title="Running">Running</a></li>
+			</ul>
+			</li>	
+	</ul>
+	<!-- Estos elementos se denominan elementos vacíos. ¡Los elementos vacíos no tienen etiqueta de cierre!-->
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+<!----------------------------------------------------------------------------------------->
+		<td class="verticalLine"></td>
+<!------------------------------Imagenes de deportes---------------------------------------->		
+<!--Grilla de imagenes-->
+
+
+<div>
+<img class="imagenDeFondo" alt="Imagen de fondo grilla" src="Imagen/fondoGrilla.jpg" style="z-index:-1" width="950" height="680" />
+</div>
+
+<div class="grilla" style="position:absolute; top:1850; left:140px">
+	 <div class="item-a">
+	 
+		<a target="_blank" href="http://www.escaladarustik.com.ar/">
+		<img class="imagenGrilla" alt="Escalada" src="Imagen/escalada.jpg" />
+		</a>
+		
+	  </div>
+	  <div class="img-contenedor">
+	  
+	  <a target="_blank" href="https://cbax.cba.gov.ar/escuelas-deportivas/">
+		<img class="imagenGrilla" alt="Roller Hockey" src="Imagen/rollerHockey.jpeg" style="z-index:1">
+	   </a>
+	   
+	  </div>
+	  <div class="item-b">
+	  
+	  <a target="_blank" href="http://altovalleparapente.com.ar/sobre-alto-valle/">
+		<img class="imagenGrilla" alt="parapente" src="Imagen/parapente.jpg" style="z-index:1">
+		</a>
+	  </div>
+	  <div class="img-contenedor">
+		
+		<a target="_blank" href="https://cbax.cba.gov.ar/escuelas-deportivas/">
+		<img class="imagenGrilla" alt="Rolley Derby" src="Imagen/rollerDerby.jpg" style="z-index:1">
+		</a>
+		
+	  </div>
+	  <div class="item-c">
+	  
+	  <a target="_blank" href="http://www.skateargentino.com.ar/v09/index.php?option=com_content&view=article&id=62&Itemid=77">
+		<img class="imagenGrilla" alt="Skate" src="Imagen/skate.jpg" style="z-index:1">
+		</a>
+		
+	  </div>
+	  <div class="img-contenedor">
+	  
+	  <a target="_blank" href="https://es-la.facebook.com/ArgentinaAJM/">
+		<img class="imagenGrilla" alt="Moto de agua" src="Imagen/motoAgua.jpg" style="z-index:1">
+		</a>
+		
+	  </div>
+	  <div class="img-contenedor">
+	  
+	  <a target="_blank" href="http://www.infobiker.com.ar/">
+		<img class="imagenGrilla" alt="Ciclismo" src="Imagen/bicicleta.jpg" style="z-index:1">
+		</a>
+		
+	  </div>
+	  <div class="item-d">
+	  
+	  <a target="_blank" href="https://estamosenlaweb.com.ar/2969/cerro-castor">
+		<img class="imagenGrilla" alt="Esqui" src="Imagen/esqui.jpg" style="z-index:1">
+		</a>
+		
+	  </div>
+	  
+
+</div>
+</main>	
+	
+<!----------------------------------Pie de pagina (footer)---------------------------------------->
+
+<footer>
+<!--La propiedadtable-layout: auto ajusta el contenido al ancho de la columna-->		
+<table  class="fondoGris" style="position:absolute; top:2600;  width: 100%; table-layout: auto;"  >	
+	<tr>
+		<td style="position:absolute;top:70; width: 25%; text-align:left;color:#A89E96;font-size:13px;line-height:25px" >
+		<div >
+			<div>Asuncion 4932, Villa Devoto, Caba. Bs As</div>
+			<div>"Parque Austral" Edif. Insignia M4 PB</div>
+			<div>WhatSapp:(54) 9 11 2303-4451</div>
+			<div>Tel/Fax:(54) 11 2303-4451</div>
+			<div>Atención: Lunes - Viernes 8:00 - 17:00 hs</div>
+			<div>Email:<a href="mailto:hitechstart@yahoo.com">hitechstart@yahoo.com
+			</a>
+			</div>
+			<div>Web:<a target="_blanck" href="https://www.facebook.com/hitechstart/">https://www.facebook.com/hitechstart/
+			</a>
+			</div>
+		</div>
+		</td>
+		<td style="width: 24%; text-align:left;">
+			
+			<!--Botones de redes sociales y separador-->
+			<div>
+					<div  id="orSeparator" style="top:10; left:270px" >
+						<div id="socialSeparatorTop"></div>
+						<div id="or">or</div>
+						<div id="socialSeparatorBottom"></div>
+					</div>
+
+					<div id="socialLogin" style="top:10; left:340px">
+					
+						<div id="socialHead"><font face="Garamond">
+						Iniciar sesion con una red social</font>
+						</div>
+						<button type="button" id="fblogin">
+							f&nbsp;&nbsp;&nbsp;<em id="fbname"></em> 
+							<span id="fbtext">Sign In with Facebook</span>
+						</button>
+			
+						<button type="button" id="gpluslogin">
+							g+<em id="gpname"></em> 
+							<span id="gptext">Sign In with Google</span>
+						</button>
+			
+						<button type="button" id="twtrlogin">
+							t&nbsp;&nbsp;&nbsp;<em id="twtrname"></em> 
+							<span id="twtrtext">Sign In with Twitter</span>
+						</button>
+						
+					</div>
+			</div>
+			
+		</td>
+			<td class="verticalLine2" style="width: 1%; text-align:left;"></td>
+			
+			<td class="estiloColumna" style="position:absolute;width: 24%; text-align:left;
+			color:#A89E96;font-size:13px;line-height:25px;">
+			<div>
+				<img src="Imagen/foto1.jpg" alt="Caracteristicas del Deporte Extremo" style=" float:left;
+				margin-right: 20px;border-radius:5px">
+				
+				<p style="text-align:justify;margin-right: 20px;">Las prácticas varían en ritmo e intensidad.
+				Los deportes son originales y creativos.
+				Hay una constante búsqueda de placer y satisfacción.
+				Sensaciones de riesgo y aventura.
+				Necesidad de autorrealización.
+				Satisfacción de preferencias.
+				Ampliación del yo (personalidad).
+				Control de emociones.</p>
+				</div>
+			</td>
+			
+			<td class="verticalLine2" style="width: 1%; text-align:left;"></td>
+			
+			<td class="estiloColumna" style="position:absolute; width: 25%;
+			text-align:center;color:#A89E96;font-size:13px;line-height:25px;">
+				<div>
+				<img src="Imagen/qr.jpeg" alt="Retrato de Lope de Vega" style="display:block; margin:auto;float:center" 
+				width="110px" height="120px">
+				<div style="margin-top:20px;text-align:justify;margin-right: 30px;" >
+				
+				<p style="text-align:center;"><strong style="font-size:15px;"><i>High Free Speed Argentina</i></strong></p> 
+				<p style="margin-top:10px;">Escanea el codigo de respuesta rapida
+				para mas informacion sobre nosotros!</p>
+				<p style="margin-top:10px;">Asuncion 4932, CABA Buenos Aires Argentina</p>
+				</div>
+				</div>
+			</td>
+		</tr>
+</table>		
+</footer>		
+</body>
+</html>

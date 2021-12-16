@@ -1,0 +1,35 @@
+.leyenda{
+vertical-align: text-top;
+margin: -5px auto;
+font-size : 30pt;
+font-family : Brush Script MT;
+color:#FDFFF8;
+}
+.chita{
+width:280; 
+height:300;	
+/*borde y sombra de la imagen del chita*/
+border-radius: 80px 40px 80px 20px;
+border:2px solid  #CCC;
+
+}
+.descripcion_imagen{
+font-size : 12pt;
+font-family : verdana;
+color:#FDFFF8;
+}
+.texto{
+margin: 10px;
+}
+.verticalLine {
+  border-left: 1px solid white;
+  height:20vh;
+}
+.imagenParacaidismo{
+	margin: 20px auto;
+
+	width:650px; 
+	height:500px;
+	border:1px solid white;	
+}
+
